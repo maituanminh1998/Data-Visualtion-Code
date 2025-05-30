@@ -8,8 +8,8 @@ The evaluation process for selecting a winning bidder typically involves three k
 As part of Vietnam’s transparency policy, the prices of all awarded contracts are published publicly. Leveraging a corporate account, we can access this data. However, a major challenge lies in the data quality—since the entries are manually input by non-technical staff, the dataset is often inconsistent, unstructured, and time-consuming to clean (taking up to a full day per dataset).
 
 To address this, I have developed an interactive dashboard that allows users to:
-- Select filters by year, province, and brand
-- Visualize key metrics:
+Select filters by year, province, and brand
+Visualize key metrics:
 + Bar chart: Average winning price by province
 + Box plot: Price distribution per province
 + Pie chart: Market share by brand
