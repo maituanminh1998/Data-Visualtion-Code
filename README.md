@@ -1,16 +1,30 @@
----
-title: "R Notebook"
-output: html_notebook
----
+In Vietnam, selling industrial washing machines (typically with capacities above 30 kg per batch) to public hospitals generally requires participation in the public bidding process. This is primarily because the unit price often exceeds 100 million VND, and hospitals prefer this method to avoid legal and compliance issues.
 
-In Vietnam, to sell a industrial washing machine (typically above 30 kg/batch), you need to go through bidding process because the selling price usually above 100 million VND and the hospital do not want to have legal problems.
+The evaluation process for selecting a winning bidder typically involves three key stages:
+1/Company Qualification Review: Assessing the credibility and legal status of the bidding company.
+2/ Technical Specification Fulfillment: Comparing product specifications against bidding documents, which usually shortlist 2–3 specific models already available in the market.
+3/ Price Evaluation: Once technical compliance is confirmed, price becomes the final determining factor.
 
-Hence, the process of choosing the best bidder usually go though company profile, technical fullfilment (usually lock in 2-3 models on the market) and lastly price. Since all the models of washer machine which won the contracts will have price release publicly. We can use a corporate account to get the data, the problems are that data are not clean due to the fact that they are all manually key in by non-IT and the data are super messy, which take up to a day just to clean the data.
+As part of Vietnam’s transparency policy, the prices of all awarded contracts are published publicly. Leveraging a corporate account, we can access this data. However, a major challenge lies in the data quality—since the entries are manually input by non-technical staff, the dataset is often inconsistent, unstructured, and time-consuming to clean (taking up to a full day per dataset).
 
-I have allowed user to select year, select province, select brand and have the data appear as  bar chart (Averge wining price by provience), box plot (price range by province), pie chart (market share), line chart (tenders over time), scatter plot (price vs capacity), filtered table (to see all the data)
+To address this, I have developed an interactive dashboard that allows users to:
+- Select filters by year, province, and brand
+- Visualize key metrics:
++ Bar chart: Average winning price by province
++ Box plot: Price distribution per province
++ Pie chart: Market share by brand
++ Line chart: Number of tenders over time
++ Scatter plot: Price vs. machine capacity
++ Interactive table: Filtered view of raw tender data
 
-These tools can help to predicts price of opponent and predict more precise pricing point so that the company can have maximum profit gain while winning the bid
+These analytics tools serve not just as reporting instruments, but as strategic tools to:
++ Forecast competitor pricing
++ Identify underpriced or overpriced market segments
++ Determine the optimal pricing point for future tenders to maximize profit while maintaining competitiveness
 
+This solution enables data-driven bidding strategies, helping companies make informed decisions and improve their chances of winning public procurement contracts efficiently.
+
+Code: 
 ```{r}
 install.packages('rsconnect')
 rsconnect::setAccountInfo(name='maituanminh', token='9296D6D026886417BECF0BACEF23BEBC', secret='OSsdwfLzFJFiUdSMomAnS9ocMktvtt2i55kEbaLS')
